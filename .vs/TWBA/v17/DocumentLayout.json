@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\view\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\view\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\view\\transactionview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\view\\transactionview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\controller\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\controller\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\model\\balancesheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\model\\balancesheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|c:\\users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\twba\\appconfig.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B8E2BBB7-CDE1-4894-B3CF-522B66DABA35}|TWBA\\TWBA.csproj|solutionrelative:twba\\appconfig.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminView.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\View\\AdminView.cs",
+              "RelativeDocumentMoniker": "TWBA\\View\\AdminView.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\View\\AdminView.cs",
+              "RelativeToolTip": "TWBA\\View\\AdminView.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:16:26.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionView.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\View\\TransactionView.cs",
+              "RelativeDocumentMoniker": "TWBA\\View\\TransactionView.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\View\\TransactionView.cs",
+              "RelativeToolTip": "TWBA\\View\\TransactionView.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:16:12.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\Customer.cs",
+              "RelativeDocumentMoniker": "TWBA\\Model\\Customer.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\Customer.cs",
+              "RelativeToolTip": "TWBA\\Model\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:51:26.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BalanceSheet.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\BalanceSheet.cs",
+              "RelativeDocumentMoniker": "TWBA\\Model\\BalanceSheet.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\BalanceSheet.cs",
+              "RelativeToolTip": "TWBA\\Model\\BalanceSheet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:51:26.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\Account.cs",
+              "RelativeDocumentMoniker": "TWBA\\Model\\Account.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Model\\Account.cs",
+              "RelativeToolTip": "TWBA\\Model\\Account.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:49:17.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Controller\\TransactionController.cs",
+              "RelativeDocumentMoniker": "TWBA\\Controller\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Controller\\TransactionController.cs*",
+              "RelativeToolTip": "TWBA\\Controller\\TransactionController.cs*",
+              "ViewState": "AQIAACsAAAAAAAAAAIAxwD0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:19:33.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppConfig.xml",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\AppConfig.xml",
+              "RelativeDocumentMoniker": "TWBA\\AppConfig.xml",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\AppConfig.xml",
+              "RelativeToolTip": "TWBA\\AppConfig.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-30T07:19:21.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Controller\\AccessController.cs",
+              "RelativeDocumentMoniker": "TWBA\\Controller\\AccessController.cs",
+              "ToolTip": "C:\\Users\\dongyig\\source\\repos\\dongyi-guo\\vuln-hunting-2024\\TWBA\\Controller\\AccessController.cs",
+              "RelativeToolTip": "TWBA\\Controller\\AccessController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:18:46.923Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

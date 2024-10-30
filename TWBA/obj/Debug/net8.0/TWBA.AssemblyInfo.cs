@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TWBA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd5ee2d97ee0240d09bcc4ad64e70f4ae30599a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TWBA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TWBA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

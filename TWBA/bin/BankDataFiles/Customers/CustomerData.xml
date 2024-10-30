@@ -8,8 +8,8 @@
     <LastName>Coldplay</LastName>
     <Email>cold.june@coldmail.com</Email>
     <Password>catchMeOnaSunnyDay</Password>
-    <CustomerId>4924628576</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9140104+11:00</DateOfJoining>
+    <CustomerId>6990796497</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.008986+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -19,8 +19,8 @@
     <LastName>Coldplay</LastName>
     <Email>cold.james@coldmail.com</Email>
     <Password>catchMeOnaFunnyDay</Password>
-    <CustomerId>2064956110</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161333+11:00</DateOfJoining>
+    <CustomerId>0352737223</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110725+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -30,8 +30,8 @@
     <LastName>Coldplay</LastName>
     <Email>cold.jude@coldmail.com</Email>
     <Password>catchMeOnaRainyDay</Password>
-    <CustomerId>7943804043</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161356+11:00</DateOfJoining>
+    <CustomerId>4097242686</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110747+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -41,8 +41,8 @@
     <LastName>Coldplay</LastName>
     <Email>cold.jeremy@coldmail.com</Email>
     <Password>catchMeOnaScaryDay</Password>
-    <CustomerId>2279612450</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161367+11:00</DateOfJoining>
+    <CustomerId>9900947816</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110787+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>111-342-0989</PhoneNumber>
@@ -52,8 +52,8 @@
     <LastName>Iceberg</LastName>
     <Email>icy.jade@coldmail.com</Email>
     <Password>catchMeOnaGlacier</Password>
-    <CustomerId>1853717398</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161372+11:00</DateOfJoining>
+    <CustomerId>1011463862</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110791+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>451-121-7823</PhoneNumber>
@@ -63,8 +63,8 @@
     <LastName>Iceberg</LastName>
     <Email>cold.james@coldmail.com</Email>
     <Password>iAmUnCatchable</Password>
-    <CustomerId>3426058170</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.916138+11:00</DateOfJoining>
+    <CustomerId>6892602331</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110799+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>101-873-7119</PhoneNumber>
@@ -74,8 +74,8 @@
     <LastName>Iceberg</LastName>
     <Email>cold.jude@coldmail.com</Email>
     <Password>catchMeOnaSlipperyDay</Password>
-    <CustomerId>4269243657</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161384+11:00</DateOfJoining>
+    <CustomerId>5045285931</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110802+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>923-423-1174</PhoneNumber>
@@ -85,7 +85,7 @@
     <LastName>Iceberg</LastName>
     <Email>cold.jeremy@coldmail.com</Email>
     <Password>catchMeOnaIceyDay</Password>
-    <CustomerId>2547362551</CustomerId>
-    <DateOfJoining>2024-10-18T20:45:08.9161388+11:00</DateOfJoining>
+    <CustomerId>8685749880</CustomerId>
+    <DateOfJoining>2024-10-30T18:19:52.0110805+11:00</DateOfJoining>
   </Customer>
 </ArrayOfCustomer>
