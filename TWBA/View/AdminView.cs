@@ -63,13 +63,19 @@ namespace TheWeakestBankOfAntarctica.View
             }
         }
 
+        /* CWE-125: Out-of-Bounds Read
+         * Patched by: Divya Saini
+         * Description: While iterating over the `accounts` list, the for loop initially used an index starting from 0 
+         *              but incorrectly ended at `accounts.Count`. Since the last element in the list should be accessed with `accounts.Count - 1`,
+         *              which I have already changed into.
+         */
         private static void GetCustomerBalance()
         {
             Console.WriteLine("Enter Customer Official Id");
             string govId = Console.ReadLine();
             List<Account> accounts = AccountController.GetAllAccountsByCustomerOfficialId(govId);
             double balance = 0;
-            for (int i = 0; i <= accounts.Count; i++)
+            for (int i = 0; i <= accounts.Count - 1; i++)
             {
                 balance = balance + accounts[i].AccountBalance;
             }
@@ -144,7 +150,6 @@ namespace TheWeakestBankOfAntarctica.View
                     switch (choice)
                     {
                         case 1:
-                            
                             break;
                         case 2:
                             AddNewEmployee();

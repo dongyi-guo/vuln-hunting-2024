@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TheWeakestBankOfAntarctica.Model;
+using TheWeakestBankOfAntarctica.Utility;
 
 namespace TheWeakestBankOfAntarctica.Data
 {
@@ -15,21 +16,31 @@ namespace TheWeakestBankOfAntarctica.Data
             twba = model;
         }
 
+        /* CWE-798 : Use of Hard coded Credentials
+         * Patched by : Divya Saini
+         * Description : I have removed the plain-text `server`, `database`, `username`, and `password` variables to prevent exposure to potential attackers
+         *               accessing this code. Instead, the user will now be prompted to provide the information.
+         */
+        /* CWE-522 : Use of Hard coded Credentials
+         * Patched by : Divya Saini
+         * Description : I have removed the plain-text `server`, `database`, `username`, and `password` variables to prevent exposure to potential attackers
+         *               accessing this code. Instead, the user will now be prompted to provide the information.
+         */
         static void ConnectToRemoteDB()
         {
-            string server = "Bank.db";
-            string database = "TWBA";
-            string username = "Bob";
-            string password = "Banana";
+            Console.WriteLine("Enter the server address: ");
+            string server = Console.ReadLine();
+            Console.WriteLine("Enter the database name: ");
+            string database = Console.ReadLine();
+            Console.WriteLine("Enter the username: ");
+            string username = Console.ReadLine();
+            Console.WriteLine("Enter the password: ");
+            string password = Console.ReadLine();
 
             string connectionString = $"Server={server};Database={database};Uid={username};Pwd={password};";
-            try
-            {
-
+            try {
                 Console.WriteLine("Connected to MySQL server!");
-
                 // We arent using the Remote DB here; however, this is a valid code in the App
-
             }
             catch (Exception ex) { }
         }

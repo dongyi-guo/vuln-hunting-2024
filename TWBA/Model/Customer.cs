@@ -14,16 +14,22 @@ namespace TheWeakestBankOfAntarctica.Model
         // Property for Customer date when he openned their first account
         public DateTime DateOfJoining { get; set; }
 
+        /* CWE-522: Insufficiently Protected Credentials
+         * Patched by: Divya Saini
+         * Description: The password passed into this function is in plain text, which raises security concerns. To mitigate this, 
+         *              a hashed password should be used for login. The `password` attribute for both this class and `User` has been renamed 
+         *              to `hash` to securely store the hashed values.
+         */
         // Constructor for Customer class that calls the base User constructor
-        public Customer(string govId, string name, string lName, string email, string password,
+        public Customer(string govId, string name, string lName, string email, string hash,
             string address, string phoneNumber) :
-            base(govId, name, lName, email, password, address, phoneNumber)
+            base(govId, name, lName, email, hash, address, phoneNumber)
         {
             base.GovId = govId;
             base.Name = name;
             base.LastName = lName;
             base.Email = email;
-            base.Password = password;
+            base.Hash = hash;
             base.Address = address;
             base.PhoneNumber = phoneNumber;
             DateOfJoining = DateTime.Now;

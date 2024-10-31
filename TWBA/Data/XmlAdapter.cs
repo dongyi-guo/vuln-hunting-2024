@@ -11,6 +11,21 @@ namespace TheWeakestBankOfAntarctica.Data
 {
     public static class XmlAdapter
     {
+        /* CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+         * Patched By: Bilal and Divya Saini
+         * Description: Dr. Bilal has taken several steps to ensure that the provide path is valid and should be accessable by the app:
+         *              He has created a IsPathValid method in UtilityFunctions class that ensures that the path is not empty or
+         *              null and also ensures there are no invalid characters like wild cards * and ? that can be exploited
+         *              to browse through the directory. He has also checked the normalised path to ensure that the system is 
+         *              access the root directory of the project only, it is not overwritting path to unauthorised directory locations. 
+         *              Sandboxing the File structure for the app. 
+         *              
+         *              I found out if the Transaction Folders containing files that have invalid characters on their names because of enconding or
+         *              system locale, IsPathValid won't be able to identify the issue. Hence, I added the check for invalid characters, the ".." for checking upper layers of the folder, and 
+         *              used the return value of IsPathValid Properly.
+         *              
+         *              Also, this issue appears in all serialising functions, I added the fix to all of them.
+         */
         private static string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
         private static string projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.FullName;
 
@@ -20,20 +35,23 @@ namespace TheWeakestBankOfAntarctica.Data
         public static void SerializeCustomerDataToXml(List<Customer> customers)
         {
             var serializer = new XmlSerializer(typeof(List<Customer>));
+            // check if the path is not null and valid
+            UtilityFunctions.IsPathValid(relativeFilePathForCustomerData);
+            // Normalize the path to get the absolute path (in canonical form)  
+            string normalizedFullPath = Path.GetFullPath(relativeFilePathForCustomerData);
+            
+            if (!normalizedFullPath.StartsWith(projectDirectory, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new Exception("Access denied: Attempted path traversal detected.");
+            }
+
             using (TextWriter writer = new StreamWriter(relativeFilePathForCustomerData))
             {
                 serializer.Serialize(writer, customers);
             }
         }
 
-        /* CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
-         * Patched By: Bilal
-         * Description: I have taken several steps to ensure that the provide path is valid and should be accessable by the app
-         *              1. I have created a IsPathValid method in UtilityFunctions class that ensures that the path is not empty or null
-         *              1.a Also ensures there are no invalid characters like wild cards * and ? that can be exploited to browse through the directory
-         *              2. I have checked the normalised path to ensure that the system is access the root directory of the project only, it is not overwritting path to 
-         *                  unauthorised directory locations. Sandboxing the File structure for the app. 
-         */
+        
         public static bool SerializeAccountDataToXml(List<Account> accounts)
         {
             var serializer = new XmlSerializer(typeof(List<Account>));
@@ -41,7 +59,6 @@ namespace TheWeakestBankOfAntarctica.Data
             UtilityFunctions.IsPathValid(relativeFilePathForAccountsData);
             // Normalize the path to get the absolute path (in canonical form)  
             string normalizedFullPath = Path.GetFullPath(relativeFilePathForAccountsData);
-
             if (!normalizedFullPath.StartsWith(projectDirectory, StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine("Access denied: Attempted path traversal detected.");
@@ -59,6 +76,15 @@ namespace TheWeakestBankOfAntarctica.Data
         {
             string updatedPath = Path.Combine(relativeFilePathForTransactions, transaction.TransactionId + ".xml");
             var serializer = new XmlSerializer(typeof(Transaction));
+            // check if the path is not null and valid
+            UtilityFunctions.IsPathValid(updatedPath);
+            // Normalize the path to get the absolute path (in canonical form)  
+            string normalizedFullPath = Path.GetFullPath(updatedPath);
+
+            if (!normalizedFullPath.StartsWith(projectDirectory, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new FileLoadException("Access denied: Attempted path traversal detected.");
+            }
             using (TextWriter writer = new StreamWriter(updatedPath))
             {
                 serializer.Serialize(writer, transaction);

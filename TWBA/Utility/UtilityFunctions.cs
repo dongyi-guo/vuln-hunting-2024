@@ -14,6 +14,8 @@ namespace TheWeakestBankOfAntarctica.Utility
         {
             return accountNumber.Length <= 10 && accountNumber.All(char.IsDigit);
         }
+
+        // This function has been updated to mitigate CWE 22: Improper Limitation of a Pathname to a Restricted Directory ("Path Traversal")
         public static bool IsPathValid(string path)
         {
            if (string.IsNullOrEmpty(path))
@@ -21,8 +23,15 @@ namespace TheWeakestBankOfAntarctica.Utility
                     throw new ArgumentException("The provided path is null or empty.");
            }
 
-           // Check if the path contains '*' or '?' wildcard characters, this prevents traversal in the directory
-           return path.Contains('*') || path.Contains('?');
+            char[] invalidChars = Path.GetInvalidPathChars();
+
+            // If there is any invalid characters in the file path
+            if (path.IndexOfAny(invalidChars) > 0) {
+                return false;
+            }
+
+           // Check if the path contains '*' or '?' wildcard characters and upper layer reference("..").
+           return path.Contains('*') || path.Contains('?') || path.Contains("..");
         }
         public static string CreateHash(string login, string password)
         {

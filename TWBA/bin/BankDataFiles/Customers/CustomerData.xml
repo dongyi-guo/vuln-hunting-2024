@@ -7,9 +7,9 @@
     <Name>June</Name>
     <LastName>Coldplay</LastName>
     <Email>cold.june@coldmail.com</Email>
-    <Password>catchMeOnaSunnyDay</Password>
-    <CustomerId>6990796497</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.008986+11:00</DateOfJoining>
+    <Hash>ef56e930c5f7582e2fa8d1df819eab95d20aa02c150b3d660b5a5967e6523a5bde9ae74104fb959fac8b6f13d6cf7ff2a94a477b16f168444960a75240113559</Hash>
+    <CustomerId>8091588143</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0955373+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -18,9 +18,9 @@
     <Name>James</Name>
     <LastName>Coldplay</LastName>
     <Email>cold.james@coldmail.com</Email>
-    <Password>catchMeOnaFunnyDay</Password>
-    <CustomerId>0352737223</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110725+11:00</DateOfJoining>
+    <Hash>0030f044792f0194459c30b44a068fc44151824092cd68dac514d154626f3f21bdffebbf6fbb6bbc14ad1e17f4aeab6ad50e72c0114090c056c3da880a258781</Hash>
+    <CustomerId>7104165988</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977435+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -29,9 +29,9 @@
     <Name>Jude</Name>
     <LastName>Coldplay</LastName>
     <Email>cold.jude@coldmail.com</Email>
-    <Password>catchMeOnaRainyDay</Password>
-    <CustomerId>4097242686</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110747+11:00</DateOfJoining>
+    <Hash>409a3f3ce0746e46c7929ed541d89e7790c71050cc43a885ae800a6eb6bde0523c88968aab76ae948be40a6a8756e1821c11323c707bf7d5913a97075552e0d5</Hash>
+    <CustomerId>4722309106</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977494+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>098-765-4321</PhoneNumber>
@@ -40,9 +40,9 @@
     <Name>Jeremy</Name>
     <LastName>Coldplay</LastName>
     <Email>cold.jeremy@coldmail.com</Email>
-    <Password>catchMeOnaScaryDay</Password>
-    <CustomerId>9900947816</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110787+11:00</DateOfJoining>
+    <Hash>f9a0e87a958be39f17079eec3e0a638e7b9a7cbb093697c4f99aab834993d606d56f620b66346ba417dc0beecedfb1176bab6f61bafbebc38b0321db87feb334</Hash>
+    <CustomerId>4564795224</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977532+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>111-342-0989</PhoneNumber>
@@ -51,9 +51,9 @@
     <Name>Jade</Name>
     <LastName>Iceberg</LastName>
     <Email>icy.jade@coldmail.com</Email>
-    <Password>catchMeOnaGlacier</Password>
-    <CustomerId>1011463862</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110791+11:00</DateOfJoining>
+    <Hash>204c4cbfebf3cee543402c50e40d92f12d50043bc8ab5711371c470ae429fe050f6fe9c3bbfc8affdb6123a56c65bd07e2ce2802098b007ab356e3a29b043f28</Hash>
+    <CustomerId>9803598145</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977589+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>451-121-7823</PhoneNumber>
@@ -62,9 +62,9 @@
     <Name>Julie</Name>
     <LastName>Iceberg</LastName>
     <Email>cold.james@coldmail.com</Email>
-    <Password>iAmUnCatchable</Password>
-    <CustomerId>6892602331</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110799+11:00</DateOfJoining>
+    <Hash>2cf1e50f7c38f45575d72c3e0ae9c15f370ad06bc44c142f9bde98cf7f5abdd8abcb82db7545a72cd6fd38c44d685d0df95fabd4fbc2114b2fd44a49d157b094</Hash>
+    <CustomerId>0505189812</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977623+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>101-873-7119</PhoneNumber>
@@ -73,9 +73,9 @@
     <Name>Jermiah</Name>
     <LastName>Iceberg</LastName>
     <Email>cold.jude@coldmail.com</Email>
-    <Password>catchMeOnaSlipperyDay</Password>
-    <CustomerId>5045285931</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110802+11:00</DateOfJoining>
+    <Hash>2ef3c0cec166756738321fde3b071e97020c82894c5ffa3af1ed8d99b58812242a60a3daff21fd74c96e894e45086e9c18ea4377d412494c744508a792da35c7</Hash>
+    <CustomerId>6449561115</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977672+11:00</DateOfJoining>
   </Customer>
   <Customer>
     <PhoneNumber>923-423-1174</PhoneNumber>
@@ -84,8 +84,8 @@
     <Name>Joseph</Name>
     <LastName>Iceberg</LastName>
     <Email>cold.jeremy@coldmail.com</Email>
-    <Password>catchMeOnaIceyDay</Password>
-    <CustomerId>8685749880</CustomerId>
-    <DateOfJoining>2024-10-30T18:19:52.0110805+11:00</DateOfJoining>
+    <Hash>74d60e8765d8bf0ee37646001f99bc6c317ae20d1d04e95e89e2cd08cb64bccd2e047519b00a9094bc26f5e782234969a94a9851d5a4d0d30599865812213d11</Hash>
+    <CustomerId>8067883245</CustomerId>
+    <DateOfJoining>2024-10-31T16:32:26.0977712+11:00</DateOfJoining>
   </Customer>
 </ArrayOfCustomer>

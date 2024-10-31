@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TheWeakestBankOfAntarctica.Controller;
 using TheWeakestBankOfAntarctica.Model;
+using TheWeakestBankOfAntarctica.Utility;
 
 namespace TheWeakestBankOfAntarctica.Data
 {
@@ -44,43 +45,43 @@ namespace TheWeakestBankOfAntarctica.Data
             List<Customer> customers = new List<Customer>();
             
             Customer newCustomer = new Customer("123-456-7890", "June", "Coldplay", 
-                "cold.june@coldmail.com","catchMeOnaSunnyDay",
+                "cold.june@coldmail.com",UtilityFunctions.CreateHash("cold.june@coldmail.com","catchMeOnaSunnyDay"),
                 "-13 coldest Ave, Eastern Shore, Antarctica","098-765-4321");
             customers.Add(newCustomer);
 
 
             newCustomer = new Customer("116-753-0261", "James", "Coldplay",
-                "cold.james@coldmail.com", "catchMeOnaFunnyDay",
+                "cold.james@coldmail.com",UtilityFunctions.CreateHash("cold.james@coldmail.com","catchMeOnaFunnyDay"),
                 "-13 coldest Ave, Eastern Shore, Antarctica", "098-765-4321");
             customers.Add(newCustomer);
 
             newCustomer = new Customer("321-654-0594", "Jude", "Coldplay",
-               "cold.jude@coldmail.com", "catchMeOnaRainyDay",
+               "cold.jude@coldmail.com",UtilityFunctions.CreateHash("cold.jude@coldmail.com","catchMeOnaRainyDay"),
                "-13 coldest Ave, Eastern Shore, Antarctica", "098-765-4321");
             customers.Add(newCustomer);
 
             newCustomer = new Customer("611-345-1731", "Jeremy", "Coldplay",
-                "cold.jeremy@coldmail.com", "catchMeOnaScaryDay",
+                "cold.jeremy@coldmail.com",UtilityFunctions.CreateHash("cold.jeremy@coldmail.com","catchMeOnaScaryDay"),
                 "-13 coldest Ave, Eastern Shore, Antarctica", "098-765-4321");
             customers.Add(newCustomer);
 
             newCustomer = new Customer("111-476-5690", "Jade", "Iceberg",
-               "icy.jade@coldmail.com", "catchMeOnaGlacier",
+               "icy.jade@coldmail.com",UtilityFunctions.CreateHash("icy.jade@coldmail.com","catchMeOnaGlacier"),
                "-27 Frozen Ave, Glacier Top, Antarctica", "111-342-0989");
             customers.Add(newCustomer);
 
             newCustomer = new Customer("116-753-0261", "Julie", "Iceberg",
-                "cold.james@coldmail.com", "iAmUnCatchable",
+                "cold.james@coldmail.com",UtilityFunctions.CreateHash("cold.james@coldmail.com","iAmUnCatchable"),
                 "-27 Frozen Ave, Glacier Top, Antarctica", "451-121-7823");
             customers.Add(newCustomer);
 
             newCustomer = new Customer("321-654-0594", "Jermiah", "Iceberg",
-               "cold.jude@coldmail.com", "catchMeOnaSlipperyDay",
+               "cold.jude@coldmail.com",UtilityFunctions.CreateHash("cold.jude@coldmail.com","catchMeOnaSlipperyDay"),
                "-27 Frozen Ave, Glacier Top, Antarctica", "101-873-7119");
             customers.Add(newCustomer);
             
             newCustomer = new Customer("611-345-1731", "Joseph", "Iceberg",
-                "cold.jeremy@coldmail.com", "catchMeOnaIceyDay",
+                "cold.jeremy@coldmail.com", UtilityFunctions.CreateHash("cold.james@coldmail.com", "catchMeOnaIceyDay"),
                 "-27 Frozen Ave, Glacier Top, Antarctica", "923-423-1174");
             customers.Add(newCustomer);
 

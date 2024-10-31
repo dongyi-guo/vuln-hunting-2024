@@ -14,16 +14,22 @@ namespace TheWeakestBankOfAntarctica.Model
         public string BranchId { get; set; }
         public string AdminId { get; private set; }
 
-        public Admin(string govId, string name, string lName, string email, string password,
+        /* CWE-522: Insufficiently Protected Credentials
+         * Patched by: Divya Saini
+         * Description: The password parameter passed into this function is currently in plain text, which poses a security risk. To enhance security, 
+         *              a hashed password should always be used for login. The `password` attribute for both this class and `User` has been updated
+         *              to `hash` to store the hashed values.
+         */
+        public Admin(string govId, string name, string lName, string email, string hash,
             Position position, Role role, string branchName, string branchId,
             string address, string phoneNumber) :
-            base(govId, name, lName, email, password, address, phoneNumber)
+            base(govId, name, lName, email, hash, address, phoneNumber)
         {
             base.GovId = govId;
             base.Name = name;
             base.LastName = lName;
             base.Email = email;
-            base.Password = password;
+            base.Hash = hash;
             base.Address = Address;
             base.PhoneNumber = phoneNumber;
 

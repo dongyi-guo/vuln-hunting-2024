@@ -4,21 +4,32 @@ using System.Linq;
 using System.Text;
 using TheWeakestBankOfAntarctica.Data;
 using TheWeakestBankOfAntarctica.Model;
+using TheWeakestBankOfAntarctica.Utility;
 
 namespace TheWeakestBankOfAntarctica.Controller
 {
     static class UserController
     {
+        /* CWE-522: Insufficiently Protected Credentials
+         * Patched by: Divya Saini
+         * Description: The password passed into this function is in plain text, which poses security concerns. To address this, 
+         *              I now use `UtilityFunctions.CreateHash(login, password)` to generate a hash from the user's email and password for secure authentication.
+         *              Additionally, I have streamlined this change across the `Customer`, `Admin`, and `User` classes by updating the password attributes to 
+         *              `hash` for storing the hash. Changes were also made to `FakeData.cs` to ensure customers are created using 
+         *              the updated `Customer` constructor.
+         */
         public static string CreateCustomer(string govId, string name, string lName,
            string email, string password, string address, string phoneNumber, double initialBalance)
         {
-           // SQLiteDB db = new SQLiteDB();
-            Customer customer = new Customer(govId, name, lName, email, password,
+            string hash = UtilityFunctions.CreateHash(email, password);
+            Customer customer = new Customer(govId, name, lName, email, hash,
                 address, phoneNumber);
-           // XmlAdapter.SerializeCustomerDataToXml(customer);
+
+            // SQLiteDB db = new SQLiteDB();
+            // XmlAdapter.SerializeCustomerDataToXml(customer);
             // Account account = new Account(initialBalance, customer.CustomerId);
             //db.AddNewCustomer(customer.CustomerId, govId, name, lName, email,
-             //   password, address, phoneNumber);
+            //   password, address, phoneNumber);
             return customer.CustomerId;
         }
 
@@ -43,13 +54,20 @@ namespace TheWeakestBankOfAntarctica.Controller
             return accountOwners;
         }
 
-
+        /* CWE-522: Insufficiently Protected Credentials
+         * Patched by: Divya Saini
+         * Description: The password passed into this function is in plain text, which poses security concerns. To address this, 
+         *              I now use `UtilityFunctions.CreateHash(login, password)` to generate a hash from the user's email and password for secure authentication.
+         *              Additionally, I have streamlined this change across the `Customer`, `Admin`, and `User` classes by updating the password attributes to 
+         *              `hash` for storing the hash.
+         */
         public static string CreateAdminUser(string govId, string name, string lName, string email,
             string password, string branchName, string branchId, string address,
             string phoneNumber)
         {
-          //  SQLiteDB db = new SQLiteDB();
-            Admin admin = new Admin(govId, name, lName, email, password, Position.manager,
+            //  SQLiteDB db = new SQLiteDB();
+            string hash = UtilityFunctions.CreateHash(email, password);
+            Admin admin = new Admin(govId, name, lName, email, hash, Position.manager,
                 Role.Admin, branchName, branchId, address, phoneNumber);
             return admin.AdminId;
         }

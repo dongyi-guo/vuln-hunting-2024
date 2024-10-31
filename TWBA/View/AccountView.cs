@@ -15,6 +15,7 @@ namespace TheWeakestBankOfAntarctica.View
         // Define headers for the DataView
         static string[] headers = { "Account #", "Owner Id", "Account Type", "Current Balance" };
         static TWBA twba;
+
         public static void AccountMenu(TWBA mainSystem)
         {
             twba = mainSystem;
@@ -88,6 +89,7 @@ namespace TheWeakestBankOfAntarctica.View
             while (choice != 0);
         }
 
+        
         public static void Close()
         {
             Console.WriteLine("Enter the Account Number");
